@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '5.0'
 
 # DATABASE #
-gem 'pg'
+gem 'pg', '~> 0.21.0'
 
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
