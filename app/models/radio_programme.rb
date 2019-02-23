@@ -1,0 +1,2 @@
+class RadioProgramme < ApplicationRecord
+end

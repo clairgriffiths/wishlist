@@ -14,6 +14,8 @@ module Persisters
         PodcastPersister.new(id, tweet_text).persist_data
       when 'tv'
         TvProgrammePersister(id, tweet_text).persist_data
+      when 'radio'
+        RadioProgrammePersister(id, tweet_text).persist_data
       # when 'netflix'
       #   NetflixPersister(tweet_text)
       else
