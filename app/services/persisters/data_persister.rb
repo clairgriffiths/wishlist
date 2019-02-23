@@ -18,6 +18,8 @@ module Persisters
         RadioProgrammePersister(id, tweet_text).persist_data
       when 'netflix'
         NetflixShowPersister(id, tweet_text).persist_data
+      when 'book'
+        BookPersister(id, tweet_text).persist_data
       else
         return
       end
