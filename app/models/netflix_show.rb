@@ -1,0 +1,2 @@
+class NetflixShow < ApplicationRecord
+end
