@@ -12,8 +12,8 @@ module Persisters
       case type
       when 'podcast'
         PodcastPersister.new(id, tweet_text).persist_data
-      # when 'tv'
-      #   TvPersister(tweet_text)
+      when 'tv'
+        TvProgrammePersister(id, tweet_text).persist_data
       # when 'netflix'
       #   NetflixPersister(tweet_text)
       else
