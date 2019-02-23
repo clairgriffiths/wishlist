@@ -19,9 +19,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
   gem 'byebug'
+  gem 'dotenv-rails'
+  gem 'factory_bot_rails'
   gem 'pry-byebug'
   gem 'rspec-rails'
-  gem 'dotenv-rails'
+  gem 'webmock'
 end
 
 group :development do

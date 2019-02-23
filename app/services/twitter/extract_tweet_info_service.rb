@@ -4,14 +4,14 @@ module Twitter
     TWEET_URL = "https://api.twitter.com/1.1/statuses/show.json"
     
     def call(id)
+      binding.pry
       extract_tweet_text(id)
     end
     
     private
     
     def extract_tweet_text(id)
-      tweet = fetch_tweet(id)
-      tweet["full_text"]
+      fetch_tweet(id)
     end
     
     def fetch_tweet(id)

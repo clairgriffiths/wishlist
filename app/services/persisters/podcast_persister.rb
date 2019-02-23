@@ -6,10 +6,9 @@ module Persisters
     def initialize(id, tweet_text)
       @id = id
       @tweet_text = tweet_text
-      persist_podcast
     end
     
-    def persist_podcast
+    def persist_data
       Podcast.create(
         tweet_id: id,
         full_text: full_text,
@@ -23,13 +22,11 @@ module Persisters
     end
     
     def user_name
-      tweet_text["user"]["user_name"]
+      tweet_text["user"]["name"]
     end
     
     def user_screen_name
-      tweet_text["user"]["user_screen_name"]
+      tweet_text["user"]["screen_name"]
     end
   end
 end
-
-# new tweet, don't forget

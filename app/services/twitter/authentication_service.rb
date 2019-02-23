@@ -10,6 +10,8 @@ module Twitter
       retrieve_tweets(url)
     end
     
+    private
+    
     def retrieve_tweets(url)
       access_token = prepare_access_token(TWITTER_OAUTH_TOKEN, TWITTER_OAUTH_TOKEN_SECRET)
       response = access_token.request(:get, url)
